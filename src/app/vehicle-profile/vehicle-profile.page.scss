@@ -1,0 +1,28 @@
+ion-content {
+  --background: #f4f6fb;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #101828;
+}
+
+ion-item {
+  --background: #ffffff;
+  --border-radius: 12px;
+  --padding-start: 16px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+ion-item h2 {
+  font-size: 16px;
+  color: #344054;
+  margin: 0;
+}

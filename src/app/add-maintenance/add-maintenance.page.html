@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/content-page">
+        <ion-icon src="assets/icons/arrow-back-sharp.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>add-maintenance</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="contianer">
+    <div class="form">
+      <ion-label>select maintenance</ion-label>
+      <ion-select [(ngModel)]="selectMaintenance" placeholder="select: Transmission oil change">
+        <ion-select-option>Engine oil change</ion-select-option>
+        <ion-select-option>Transmission oil change</ion-select-option>
+        <ion-select-option>spark plug replacement</ion-select-option>
+        <ion-select-option>air filter replacement</ion-select-option>
+        <ion-select-option>fuel filter replacement</ion-select-option>
+        <ion-select-option>brake pad replacement</ion-select-option>
+        <ion-select-option>suspension check and repair</ion-select-option>
+        <ion-select-option>wheel alignment and balancing</ion-select-option>
+        <ion-select-option>tire replacement</ion-select-option>
+        <ion-select-option>battery replacement</ion-select-option>
+        <ion-select-option>bulb replacement</ion-select-option>
+        <ion-select-option>coolant flush and refill</ion-select-option>
+        <ion-select-option>exhaust system inspection</ion-select-option>
+        <ion-select-option>clutch maintenance</ion-select-option>
+      </ion-select>
+      <ion-label>date for maintenance</ion-label>
+      <ion-input [(ngModel)]="date" type="date" placeholder="date"></ion-input>
+      <ion-label>odometer for this maintenance</ion-label>
+      <ion-input [(ngModel)]="odometer" type="number" placeholder="example: 10000">km</ion-input>
+
+      <ion-label>set Reminder by time for next maintenance</ion-label>
+      <ion-input [(ngModel)]="numberOfDaysorMonths" placeholder="example: 5"></ion-input>
+      <ion-select [(ngModel)]="optionDaysorMonths" placeholder="days or months">
+        <ion-select-option>days</ion-select-option>
+        <ion-select-option>months</ion-select-option>
+      </ion-select>
+      <ion-button (click)="save()">save</ion-button>
+    </div> 
+  </div>
+</ion-content>

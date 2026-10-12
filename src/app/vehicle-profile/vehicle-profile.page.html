@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/content-page">
+        <ion-icon src="assets/icons/arrow-back-sharp.svg">
+
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>vehicle-profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="container">
+  <h1>My Vehicle</h1>
+   <ion-item>
+      <h2>type: {{carType}}</h2>
+    </ion-item>
+    <ion-item>
+      <h2>brand: {{brand}}</h2>
+    </ion-item>
+    <ion-item>
+      <h2>model: {{model}}</h2>
+    </ion-item>
+    <ion-item>
+      <h2>year: {{year}}</h2>
+    </ion-item>
+
+ </div>
+</ion-content>

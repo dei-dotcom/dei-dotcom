@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>My Vehicle</ion-title>
+    <span>{{mycarbrand}} - {{mycarmodel}} - {{mycaryear}} </span>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="dashboard">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Current MileAge</ion-card-title>
+          <ion-card-content>
+            <h2>{{currentMileage}} - km</h2>
+          </ion-card-content>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>next maintenance</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <h2>{{Maintenance}}</h2>
+          <h2>{{NextMaintenance}}</h2>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Upcomming Reminder</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <h2>{{registration}}</h2>
+          <h2>{{duedate}}</h2>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Maintenance Status</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <h2>{{service}} </h2>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="quick-actions">
+      <ion-buttons slot="bottom">
+        <ion-button expand="block" (click)="addmaintenance()">Add Maintenance</ion-button>
+        <ion-button expand="block" (click)="addreminder()">Add Reminder</ion-button>
+        <ion-button expand="block" (click)="updatemileage()">Update Mileage</ion-button>
+      </ion-buttons>
+    </div>
+  
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button>
+        <ion-icon src="assets/icons/home-sharp.svg"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/maintenance">
+        <ion-icon src="assets/icons/build-sharp.svg"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/reminder">
+        <ion-icon src="assets/icons/notifications-sharp.svg"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/vehicle-profile">
+        <ion-icon src="assets/icons/car-sport-sharp.svg"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  </div>
+</ion-content>

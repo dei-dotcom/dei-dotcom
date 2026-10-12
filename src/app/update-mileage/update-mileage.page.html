@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>update-mileage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="form">
+      <ion-label>enter odometer</ion-label>
+      <ion-input [(ngModel)]="odometer"></ion-input>
+      <ion-button (click)="save()">save</ion-button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/content-page">
+        <ion-icon src="assets/icons/arrow-back-sharp.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>maintenance</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="cards">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{record[0]?.type}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>start date: {{record[0]?.date}}</p>
+          <p>mileage:    {{record[0]?.odometer}}</p>
+          <p>due date:   {{record[0]?.remindervalue}} {{record[0]?.reminderunit}}</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{record[1]?.type}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>start date: {{record[1]?.date}}</p>
+          <p>mileage:    {{record[1]?.odometer}}</p>
+          <p>due date:   {{record[1]?.remindervalue}} {{record[1]?.reminderunit}}</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{record[2]?.type}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>start date: {{record[2]?.date}}</p>
+          <p>mileage:    {{record[2]?.odometer}}</p>
+          <p>due date:   {{record[2]?.remindervalue}} {{record[2]?.reminderunit}}</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{record[3]?.type}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>start date: {{record[3]?.date}}</p>
+          <p>mileage:    {{record[3]?.odometer}}</p>
+          <p>due date:   {{record[3]?.remindervalue}} {{record[3]?.reminderunit}}</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{record[4]?.type}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>start date: {{record[4]?.date}}</p>
+          <p>mileage:    {{record[4]?.odometer}}</p>
+          <p>due date:   {{record[4]?.remindervalue}} {{record[4]?.reminderunit}}</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>add-car</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="form">
+      <ion-list>
+      <ion-label>Vehicle Type:</ion-label>
+      <ion-select  [(ngModel)]="vehicletype">
+        <ion-select-option>cars</ion-select-option>
+        <ion-select-option>motorcycle</ion-select-option>
+        <ion-select-option>truck</ion-select-option>
+      </ion-select>
+      <ion-label>Brand</ion-label>
+      <ion-input  type="text" [(ngModel)]="brand"></ion-input>
+      <ion-label>Model:</ion-label>
+      <ion-input type="text" [(ngModel)]="model"></ion-input>
+      <ion-label>Year:</ion-label>
+      <ion-input type="text" [(ngModel)]="year"></ion-input>
+      <ion-label>Current Odometer</ion-label>
+      <ion-input type="number" [(ngModel)]="odometer"></ion-input>
+      <ion-label>Fuel type</ion-label>
+      <ion-select [(ngModel)]="fuel">
+        <ion-select-option>Unlided</ion-select-option>
+        <ion-select-option>Premium</ion-select-option>
+        <ion-select-option>Diesel</ion-select-option>
+      </ion-select>
+      </ion-list>
+      <ion-button (click)="submit()">submit</ion-button>
+    </div>
+  </div>
+</ion-content>

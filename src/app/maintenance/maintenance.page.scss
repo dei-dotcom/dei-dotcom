@@ -1,0 +1,31 @@
+ion-content {
+  --background: #f4f6fb;
+}
+
+.container {
+  padding: 16px;
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+}
+
+ion-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  padding: 8px;
+  margin: 0;
+}
+
+ion-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #101828;
+}
+
+ion-card-content p {
+  color: #667085;
+  margin: 4px 0;
+}

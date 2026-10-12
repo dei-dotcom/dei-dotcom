@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/content-page">
+        <ion-icon src="assets/icons/arrow-back-sharp.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>add-reminder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <div class="contianer">
+    <div class="form">
+      <ion-label>select maintenance</ion-label>
+      <ion-select placeholder="select: Transmission oil change">
+        <ion-select-option>Engine oil change</ion-select-option>
+        <ion-select-option>Transmission oil change</ion-select-option>
+        <ion-select-option>spark plug replacement</ion-select-option>
+        <ion-select-option>air filter replacement</ion-select-option>
+        <ion-select-option>fuel filter replacement</ion-select-option>
+        <ion-select-option>brake pad replacement</ion-select-option>
+        <ion-select-option>suspension check and repair</ion-select-option>
+        <ion-select-option>wheel alignment and balancing</ion-select-option>
+        <ion-select-option>tire replacement</ion-select-option>
+        <ion-select-option>battery replacement</ion-select-option>
+        <ion-select-option>bulb replacement</ion-select-option>
+        <ion-select-option>coolant flush and refill</ion-select-option>
+        <ion-select-option>exhaust system inspection</ion-select-option>
+        <ion-select-option>clutch maintenance</ion-select-option>
+      </ion-select>
+      <ion-label>start date</ion-label>
+      <ion-input type="date" placeholder="date"></ion-input>
+        <ion-label>target date</ion-label>
+      <ion-input type="date" placeholder="date"></ion-input>
+      <ion-label>odometer for this maintenance</ion-label>
+      <ion-input type="number" placeholder="example: 10000">km</ion-input>
+      <ion-button (click)="save()">save</ion-button>
+    </div> 
+  </div>
+</ion-content>

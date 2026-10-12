@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data Field</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="form">
+    <div class="container">
+      <h1>Information</h1>
+
+      <ion-item>
+        <ion-label position="stacked">Last name</ion-label>
+        <ion-input type="text" fill="outline" placeholder="Enter your information" [(ngModel)]="lastname"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">First name</ion-label>
+        <ion-input type="text" fill="outline" placeholder="Enter your information" [(ngModel)]="firstname"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Middle name</ion-label>
+        <ion-input type="text" fill="outline" placeholder="Enter your information" [(ngModel)]="middlename"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Address</ion-label>
+        <ion-input type="text" fill="outline" placeholder="Enter your information" [(ngModel)]="address"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Contact number</ion-label>
+        <ion-input type="tel" fill="outline" placeholder="Enter your information" [(ngModel)]="contact"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Age</ion-label>
+        <ion-input type="number" fill="outline" placeholder="Enter your information" [(ngModel)]="age"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Civil status</ion-label>
+        <ion-input type="text" fill="outline" placeholder="Enter your information" [(ngModel)]="civilStatus"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Email address</ion-label>
+        <ion-input type="email" fill="outline" placeholder="Enter your information" [(ngModel)]="email"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" (click)="show()">Show data</ion-button>
+      <ion-button expand="block" color="medium" (click)="reset()">Clear</ion-button>
+    </div>
+
+    <!-- <ion-list >
+      <ion-item>
+        <p>{{person.firstname}}</p>
+        <p>{{person.lastname}}</p>
+        <p>{{person.middlename}}</p>
+        <p>{{person.age}}</p>
+        <p>{{person.contact}}</p>
+        <p>{{person.address}}</p>
+        <p>{{person.civilStatus}}</p>
+        <p>{{person.email}}</p>
+      </ion-item>
+    </ion-list> -->
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>firstname</ion-col>
+        <ion-col>lastname</ion-col>
+        <ion-col>middlename</ion-col>
+        <ion-col>age</ion-col>
+        <ion-col>contact</ion-col>
+        <ion-col>address</ion-col>
+        <ion-col>civilStatus</ion-col>
+        <ion-col>email</ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>{{person.firstname}}</ion-col>
+        <ion-col>{{person.lastname}}</ion-col>
+        <ion-col>{{person.middlename}}</ion-col>
+        <ion-col>{{person.age}}</ion-col>
+        <ion-col>{{person.contact}}</ion-col>
+        <ion-col>{{person.address}}</ion-col>
+        <ion-col>{{person.civilStatus}}</ion-col>
+        <ion-col>{{person.email}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
