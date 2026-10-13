@@ -1,42 +1,58 @@
-ion-content {
-  --background: #f4f6fb;
+*{
+  font-family: monospace;
+  font-size: 20px;
+  color: cyan;
 }
-
-.container {
-  padding: 16px;
-}
-
-.form {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-ion-label {
-  display: block;
-  margin-top: 14px;
-  font-weight: 600;
-  color: #667085;
-  font-size: 14px;
-}
-
-ion-input,
-ion-select {
-  border: 1px solid #e4e7ec;
-  border-radius: 10px;
-  margin-top: 6px;
-  --padding-start: 12px;
-}
-
-ion-list {
-  background: transparent;
-}
-
-ion-button {
-  --border-radius: 12px;
-  --box-shadow: 0 4px 12px rgba(56, 128, 255, 0.3);
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  margin-top: 20px;
-  font-weight: 600;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+
+  
+}
+ion-list{
+  width: 100%;
+  background-color: rgb(2, 2, 2);
+  border-radius: 10px;
+  border: 2px solid cyan;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px cyan;
+}
+ion-input,ion-select{
+  background-color: rgb(243, 242, 242);
+  border-radius: 10px;
+  border: 2px solid cyan;
+  color: black;
+}
+ion-button{
+  width: 100%;
+  border-radius: 10px;
+  --border-radius: 10px;
+  --background: black;
+  border: 2px solid cyan;
+  box-shadow: 0px 0px 10px cyan;
+}
+ion-toolbar{
+  --background: rgb(0, 0, 0);
+  border-bottom: 2px solid cyan;
+  box-shadow: 0px 0px 10px cyan;
+}
+h1{
+  color: cyan;
+  text-align: center;
+  font-size: 30px;
+  
 }

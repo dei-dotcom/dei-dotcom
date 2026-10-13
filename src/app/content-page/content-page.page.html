@@ -42,15 +42,15 @@
           <h2>{{service}} </h2>
         </ion-card-content>
       </ion-card>
-    </div>
+    
     <div class="quick-actions">
       <ion-buttons slot="bottom">
-        <ion-button expand="block" (click)="addmaintenance()">Add Maintenance</ion-button>
-        <ion-button expand="block" (click)="addreminder()">Add Reminder</ion-button>
-        <ion-button expand="block" (click)="updatemileage()">Update Mileage</ion-button>
+        <ion-button (click)="addmaintenance()">Add Maintenance</ion-button>
+        <ion-button (click)="addreminder()">Add Reminder</ion-button>
+        <ion-button (click)="updatemileage()">Update Mileage</ion-button>
       </ion-buttons>
     </div>
-  
+  </div>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button>

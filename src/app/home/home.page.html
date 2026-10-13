@@ -1,12 +1,15 @@
-<ion-content>
- <div class="container">
-   <div class="header">
-    <ion-icon></ion-icon>
-    <h1>Welcome to Vehicle Reminder & Maintenace</h1>
-    <p>keep your car maintenace well!!</p>
-  </div>
-  <ion-buttons slot="bottom">
-    <ion-button (click)="nextpage()">Get Started</ion-button>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="header">
+      <ion-icon src="assets/icons/car-sport-sharp.svg"></ion-icon>
+      <h1 class="title1">  Welcome to Vehicle </h1>
+      <h1 class="title2">Reminder & Maintenace</h1>
+      <p>keep your car maintenace well!!</p>
+    </div>
+
+    <ion-buttons>
+      <ion-button (click)="nextpage()">Get Started</ion-button>
     </ion-buttons>
   </div>
 </ion-content>

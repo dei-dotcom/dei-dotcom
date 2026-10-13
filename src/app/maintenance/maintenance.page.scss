@@ -1,17 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 ion-content {
   --background: #f4f6fb;
 }
 
 .container {
+  width: 100%;
+  max-width: 100%;
   padding: 16px;
 }
 
 .cards {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 12px;
+  width: 100%;
 }
 
 ion-card {
+  width: 100%;
+  max-width: 100%;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   background: #ffffff;
@@ -23,9 +33,11 @@ ion-card-title {
   font-size: 16px;
   font-weight: 700;
   color: #101828;
+  overflow-wrap: break-word;
 }
 
 ion-card-content p {
   color: #667085;
   margin: 4px 0;
+  overflow-wrap: break-word;
 }
