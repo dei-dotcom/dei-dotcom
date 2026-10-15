@@ -30,8 +30,7 @@ ion-content {
 
 .header {
  text-align: center;
- /* was inline-block: shrink-to-fit made this as wide as the
-    nowrap title, overflowing narrow phones. Constrain it instead. */
+
  width: 100%;
  max-width: 520px;
 }
@@ -67,6 +66,7 @@ ion-content {
 @keyframes typing {
   from {
     width: 0;
+    
   }
 
   to {
